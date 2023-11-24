@@ -4,6 +4,12 @@ require_relative '../my_data'
 require 'minitest/autorun'
 
 class TestMyData < Minitest::Test
+  # def test_additional_1
+  #   klass = MyData.define(:foo, :bar)
+  #   d = klass.new(foo: 1, bar: 2)
+  #   assert_equal(1, d.foo)
+  # end
+
   def test_define
     klass = MyData.define(:foo, :bar)
     assert_kind_of(Class, klass)
